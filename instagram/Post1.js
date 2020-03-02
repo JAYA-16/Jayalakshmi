@@ -28,7 +28,7 @@ export class Post1 extends Component {
       <div>
         {this.state.post.map(i => {
           return (
-            <div className="insta-post-data">
+            <div key={i.key} className="insta-post-data">
               {/*header*/}
               <div className="insta-post-profile">
                 <img
